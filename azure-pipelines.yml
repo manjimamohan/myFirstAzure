@@ -13,16 +13,6 @@ parameters:
   displayName: Run Tests?
   type: boolean
   default: false
-stages:
-- stage: build
-  variables:
-    - group: 1
-  jobs:
-  - job: run_build
-    pool:
-      vmImage: 'Ubuntu 16.04'
-    steps:
-    - script: echo Build
 
 variables:
 - group: "Contoso Variable Group"
